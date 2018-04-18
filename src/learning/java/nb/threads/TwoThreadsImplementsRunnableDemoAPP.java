@@ -6,7 +6,7 @@ package learning.java.nb.threads;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class TwoThreadsDemoAPP {
+public class TwoThreadsImplementsRunnableDemoAPP {
     static Thread mainThread;
     public static void main(String[] args) {  
         new ChildrenThread();
@@ -20,7 +20,7 @@ public class TwoThreadsDemoAPP {
             try {
                 mainThread.sleep(250);
             } catch (InterruptedException ex) {
-                Logger.getLogger(TwoThreadsDemoAPP.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(TwoThreadsImplementsRunnableDemoAPP.class.getName()).log(Level.SEVERE, null, ex);
             }
             i--;
         }
