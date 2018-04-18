@@ -1,3 +1,5 @@
+// Author: Алексей Николаевич Васильев. Java. Объектно-ориентированное программирование. 
+//Издательский дом "Питер", 2011 - Computers - 395 page
 package learning.vasiljevbook.thread.demos;
 
 class MySource{
