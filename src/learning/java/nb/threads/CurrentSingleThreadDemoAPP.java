@@ -3,13 +3,26 @@
  */
 package learning.java.nb.threads;
 
-public class CurrentSingleThreadDemoAPP {
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
+public class CurrentSingleThreadDemoAPP {
+    static Thread t;
     public static void main(String[] args) {         
-        Thread t = Thread.currentThread();
-        System.out.println("Demo of Threads in Java" + t);
-        t.setName("Name of current thread of this app");
-        
+        t = Thread.currentThread();
+        System.out.println("Name of current thread of this app is:" + t);
+        t.setName("New ThreadName");
+        System.out.println("New name of current thread of this app is:" + t);
+        try {
+            int i = 10;
+            while (i > 0) {
+                System.out.println("Number iteration of MainThread: "+i); 
+                Thread.sleep(1000);
+                i--;
+            }
+        } catch (InterruptedException ex) {
+                Logger.getLogger(CurrentSingleThreadDemoAPP.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
     }
     
