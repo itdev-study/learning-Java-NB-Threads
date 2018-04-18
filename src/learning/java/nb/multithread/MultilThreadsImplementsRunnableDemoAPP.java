@@ -1,12 +1,12 @@
 /*
- * This demo runs Main - Threads Sync Demo
+ * This demo runs Main - Multi Children Threads
  */
-package learning.java.nb.threads.multithread.sync;
+package learning.java.nb.multithread;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class MultilThreadsImplementsRunnableSyncDemoAPP {  
+public class MultilThreadsImplementsRunnableDemoAPP {  
     
     public static void main(String[] args) {  
         ChildrenThread childrenThread1;
@@ -15,6 +15,7 @@ public class MultilThreadsImplementsRunnableSyncDemoAPP {
         childrenThread2 = new ChildrenThread("ChildrenThread2");  
         for(int i=10;i>0;i--){
                 System.out.println("Number iteration of MainThread: "+i); 
+                
 //                    try {
 //                        mainThread.sleep(100);
 //                    } catch (InterruptedException ex) {
