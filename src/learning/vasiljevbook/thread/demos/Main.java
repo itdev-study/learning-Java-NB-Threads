@@ -37,9 +37,9 @@ class MakeThread implements Runnable{
         t=new Thread(this);
         // Запуск потока:
         t.start();}
-    // Определение метода run():
-    public void run(){
-    src.showName(surname,name,time);}
+        // Определение метода run():
+        public void run(){
+        src.showName(surname,name,time);}
 }
 
 class SynchThreads{
